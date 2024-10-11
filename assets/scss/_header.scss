@@ -1,0 +1,69 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  top: 50px;
+
+  @media screen and (max-width: 480px) {
+    top: 30px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    @media screen and (max-width: 480px) {
+      img {
+        width: 90px;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 12px;
+
+    @media screen and (max-width: 480px) {
+      gap: 8px;
+    }
+  }
+
+  &__btn {
+    width: 60px;
+    height: 60px;
+    background: #263d1e;
+    border: 3px solid #607f55;
+    color: #def3d6;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 200ms ease-in-out;
+
+    &:hover {
+      background: #607f55;
+    }
+
+    svg {
+      max-height: 30px;
+      max-width: 30px;
+      display: block;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 50px;
+      height: 50px;
+
+      svg {
+        max-width: 24px;
+        max-height: 24px;
+      }
+    }
+  }
+}
